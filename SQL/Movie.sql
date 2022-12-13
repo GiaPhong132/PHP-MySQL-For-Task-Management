@@ -1,0 +1,113 @@
+USE Cinema;
+DROP TABLE IF EXISTS Movie;
+
+CREATE TABLE Movie (
+	Movie_code 		VARCHAR(9) 		PRIMARY KEY,
+	Director 		VARCHAR(50),
+	Release_date	DATE 			NOT NULL,
+	Age_limit		VARCHAR(3)		,
+	Rating 			DECIMAL(2,1)	CHECK (Rating > 0),
+	Time_limit 		DECIMAL(2,1)	CHECK (Time_limit > 0),
+	Name 			VARCHAR(100)	NOT NULL
+);
+
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m55319663','Simmonds Sallings','2019-12-31','All',1.4,1.6,'The Shawshank Redemption ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m84499891','Henderson Wandtke','2022-01-13','All',2.4,1.8,'The Godfather ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m64267580','Robin Negri','2021-04-25','All',1.1,1.4,'The Godfather: Part II ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m12968902','Ailsun Craske','2022-11-12','All',1.6,1.6,'Pulp Fiction ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m04905601','Delano Thorsen','2021-11-11','All',2.1,1.3,'The Good, the Bad and the Ugly ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m69707972','Carly Strover','2020-11-28','All',1.2,1.4,'The Dark Knight ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m91258168','Emalia Kibbe','2020-10-22','All',4,1.1,'12 Angry Men ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m66791420','Hallie Cutchey','2021-02-14','All',3.5,1.1,'Schindler\'s List ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m67771403','Federica Ingleston','2020-03-10','All',4.4,1.2,'The Lord of the Rings: The Return of the King ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m57301478','Rodolph Tales','2022-06-27','All',4.1,1.8,'Fight Club ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m19096654','Sandra Shelly','2020-03-23','All',4.5,1.2,'Star Wars: Episode V - The Empire Strikes Back ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m63305834','Britta Angrock','2022-10-18','All',3.8,1.5,'The Lord of the Rings: The Fellowship of the Ring ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m31930108','Stephana Sphinxe','2020-10-21','16',2.8,1.7,'One Flew Over the Cuckoo\'s Nest ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m71568090','Otes Exell','2022-10-02','18',3.8,1.4,'Goodfellas ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m31709442','Staford Cressey','2021-07-22','16',2.9,1.6,'Seven Samurai ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m93653336','Evangelia Riply','2022-10-01','All',1.9,1.3,'Inception ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m26865850','Cad Patifield','2020-02-13','All',3.7,1.9,'Star Wars ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m33633469','Elbertine O\'Corren','2021-09-07','16',4.8,1.4,'Forrest Gump ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m81482803','Keelia Waples','2021-07-04','All',2.8,1.7,'The Matrix ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m22167169','Herb Labdon','2022-04-25','All',4.9,1,'The Lord of the Rings: The Two Towers ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m15387336','Viviene Blakesley','2022-04-01','All',3.1,1.5,'City of God ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m02068345','Henrie Bambrugh','2020-07-31','All',3.5,1.9,'The Silence of the Lambs ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m80552946','Bessy Bangiard','2021-09-15','All',4.9,1.4,'Se7en ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m14311756','Kory Archley','2022-01-10','18',4.6,1.3,'Once Upon a Time in the West ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m23947634','Gayleen Spaughton','2020-05-31','All',3.4,1.8,'Casablanca ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m83761873','Jerrie Sizzey','2021-01-13','All',1.2,1.9,'The Usual Suspects ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m34307611','Suzi Denge','2021-07-28','All',3,1.8,'Raiders of the Lost Ark ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m34651114','Ellswerth Dunkerly','2020-07-21','All',3.2,1.7,'Rear Window ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m31281014','Cthrine Shinn','2020-03-21','All',1.1,1.1,'It\'s a Wonderful Life ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m59455748','Cally Duxfield','2022-08-03','All',4.7,1.1,'Psycho ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m41003528','Sasha Behn','2022-03-20','All',3.6,1.5,'Léon: The Professional ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m23274579','Waneta Pedroni','2022-08-04','All',3.1,1.6,'Sunset Blvd. ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m90427384','Tony Feige','2022-05-15','All',4.6,2,'American History X ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m83816154','Sosanna Chillingsworth','2021-11-06','All',4.6,1.7,'Apocalypse Now ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m58629216','Legra Altoft','2022-03-02','All',3.8,1.6,'Terminator 2: Judgment Day ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m36098720','Rosie Mitrovic','2022-03-17','All',1.2,1.2,'Memento ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m45836752','Putnam Harbard','2020-05-25','All',3.8,1.3,'Saving Private Ryan ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m01811816','Vic Stain','2021-03-05','18',4.6,1.3,'City Lights ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m79541185','Dale Legan','2021-07-02','All',3.9,1.2,'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m03397093','Kelcie Hardison','2020-10-23','16',1.1,1.3,'Alien ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m62056443','Lancelot Sphinxe','2022-10-07','All',1.4,1.9,'Modern Times ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m08269068','Garvey Kobpal','2022-06-20','All',2.2,1.1,'Spirited Away ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m19932012','Twila Earthfield','2021-07-17','All',2.6,1.7,'Gravity ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m92047561','Staci Seivwright','2020-05-15','All',5,1.7,'North by Northwest ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m25178503','Brynne Danbye','2021-09-21','All',1.7,1.7,'Back to the Future ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m42705030','Fayre Maier','2021-12-21','All',1.1,1.4,'Citizen Kane ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m93457413','Roxane Lorden','2022-04-15','18',2.5,1.8,'The Pianist ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m23588678','Walden Cowdry','2020-09-09','All',4.1,1,'M ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m04560481','Phelia McDuffie','2022-11-05','All',4.3,1.6,'Life Is Beautiful ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m60193694','Korry Pleass','2021-01-01','All',4,1.6,'The Shining ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m44725767','Louise Limeburner','2021-11-10','18',2.3,1.4,'The Departed ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m80906605','Damiano Haton','2022-03-10','All',2.4,1.2,'Paths of Glory ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m47354433','Marcelia Stronghill','2022-09-07','All',3.1,1,'Vertigo ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m29716524','Lula Caughte','2020-08-03','All',4.3,1.1,'American Beauty ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m19307593','Jacqueline Coxall','2022-05-06','All',4.6,1.7,'Django Unchained ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m88277889','Gussy Duffus','2020-03-23','All',4.5,1.9,'Double Indemnity ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m15576089','Monti Headey','2020-01-04','All',3.2,1.9,'Taxi Driver ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m06189028','Virgina Wreiford','2021-02-20','All',1.4,1.7,'The Dark Knight Rises ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m61954213','Charissa Jansema','2022-05-31','All',1.9,1.4,'Aliens ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m65686242','Gussy Waterland','2022-01-05','All',2.4,1.7,'The Green Mile ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m64263012','Teddy Sebborn','2020-01-09','All',1.5,1.9,'The Intouchables ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m13604066','Lombard Burdus','2020-03-20','All',3.9,1.5,'Gladiator ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m58371615','Atalanta Gammett','2020-07-04','All',3.8,1,'WALL·E ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m46573100','Tandy Staveley','2021-02-15','All',4.5,1.5,'The Lives of Others ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m72640766','Norris McCaughey','2020-12-10','All',3,1.9,'Toy Story 3 ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m73006990','Adelice Grimwad','2020-02-11','All',4.7,1.5,'The Great Dictator ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m03789410','Domenico Jubert','2020-04-25','All',3.9,1.2,'A Clockwork Orange ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m10030333','Amara Matejka','2022-06-13','All',2.9,1.1,'The Prestige ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m07894255','Shelli Stammer','2021-12-04','All',1,1.7,'Amélie ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m45203618','Elden Ewbanke','2021-09-12','16',3.8,1.2,'Lawrence of Arabia ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m41160635','Teodorico Amberson','2019-12-08','16',1.6,1.5,'To Kill a Mockingbird ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m91645119','Arnaldo Tuhy','2020-02-25','All',1.4,1.6,'Reservoir Dogs ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m39289033','Angel Piffe','2020-06-27','All',4.2,1.9,'Das Boot ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m54969635','Lionello Haggis','2021-06-17','All',2.9,1.2,'Cinema Paradiso ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m92432288','Carina Yacobsohn','2021-12-22','18',2.3,1.7,'The Lion King ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m51517121','Bryn Kubacek','2021-05-17','All',4.6,1.2,'The Treasure of the Sierra Madre ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m69670508','Ferdinanda Parsisson','2020-11-27','18',2,1.2,'The Third Man ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m06140924','Debby Leggen','2021-02-12','All',3.4,1.8,'Once Upon a Time in America ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m89779930','Colver Igo','2021-11-25','All',1.9,1.6,'Requiem for a Dream ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m55300646','Whit Maly','2022-01-22','All',4,1.6,'Star Wars: Episode VI - Return of the Jedi ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m08256994','Nat Overil','2020-09-14','All',1.3,1.5,'Eternal Sunshine of the Spotless Mind ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m59243291','Frederik Gogan','2020-04-01','18',1.7,1.6,'Full Metal Jacket ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m21628403','Cherida Cartmer','2020-10-08','All',4.5,1.1,'Braveheart ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m51574341','Kevon Manske','2021-03-27','All',1.3,1.1,'L.A. Confidential ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m00036050','Florance Guilloud','2020-07-18','All',2,1.4,'Oldboy ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m45391689','Dari Mougenel','2022-08-02','All',3.3,1.2,'Singin\' in the Rain ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m80106369','Vito Leteurtre','2021-08-25','All',3.5,1.8,'Metropolis ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m01089002','Sandro Quilter','2022-01-05','All',4.8,1.6,'Chinatown ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m53903586','Henrik Wix','2020-04-02','All',4.1,1.6,'Rashomon ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m93278499','Agneta Cape','2021-10-25','All',1.5,1.6,'Some Like It Hot ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m37268580','Sissy Bogaert','2020-10-02','All',4.2,1.5,'Bicycle Thieves ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m50671370','Wain Meni','2021-01-15','All',1.1,1,'All About Eve ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m26722206','Rochester Geely','2021-06-15','18',4.8,1.2,'Monty Python and the Holy Grail ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m62022016','Tudor De la Feld','2020-10-26','All',3.9,1.7,'Princess Mononoke ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m59551317','Antonietta Boom','2022-06-02','All',3.5,1.7,'Amadeus ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m94589713','Fabe Leuchars','2021-02-17','All',1.2,1.1,'2001: A Space Odyssey ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m72390554','Kelly Petricek','2019-12-12','All',1.6,1.4,'Witness for the Prosecution ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m61271264','Anne-marie Maxfield','2022-08-21','All',3.5,1.8,'The Apartment ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m78126847','Aindrea Le Barr','2021-04-26','16',3.8,1.9,'The Sting ');
+INSERT INTO Movie (Movie_code, Director, Release_date, Age_limit, Rating,Time_limit, Name) VALUES ('m48116842','Maddy Tredgold','2020-06-19','All',2.6,1.4,'Unforgiven ');
