@@ -1,4 +1,3 @@
-# Urban-Wasting-Collection
 PHP code linked with MySQL.
 
   You can run this application with XAMPP. You can find a way to run code PHP with Xampp on Youtube.
